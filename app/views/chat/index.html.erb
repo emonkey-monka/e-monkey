@@ -1,9 +1,17 @@
 <h1>Chat#index</h1>
-<div id="messages"></div>
 
 <form id="message_form">
-    <input	type="text"	name="message"	id="message_field">	
-    <input	type="submit"	id="post_message">
-    </form>
-
-<p><%= link_to 'LOGOUT', destroy_user_session_path, method: :delete %></p>
+    <input type="text"	name="message" id="message_field">	
+    <input type="submit" id="post_message">
+</form>
+    
+<div id="messages">
+   <% @message.each do |talk| %>
+    <div class="message"> 
+      <p><%= talk.text %></p>
+    </div>
+    <% end %>
+</div>    
+    
+<p><%= link_to 'LOGOUT', destroy_user_session_path, method: :delete %></p>  
+  
