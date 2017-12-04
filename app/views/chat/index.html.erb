@@ -8,6 +8,7 @@
 <div id="messages">
    <% @message.each do |talk| %>
     <div class="message"> 
+      <p><%= talk.created_at %></p>
       <p><%= talk.text %></p>
     </div>
     <% end %>
