@@ -1,7 +1,10 @@
-<h1>Chat#index</h1>
-<div id="messages"></div>
+h3 Chat#index
+#messages
 
-<form id="message_form">
-    <input	type="text"	name="message"	id="message_field">	
-    <input	type="submit"	id="post_message">
-    </form>
+form id="message_form"
+  p
+    input	type="text"	name="message"	id="message_field"
+  p
+    input	type="submit"	id="post_message"
+
+p = link_to 'LOGOUT', destroy_user_session_path, method: :delete
