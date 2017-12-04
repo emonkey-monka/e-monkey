@@ -1,0 +1,31 @@
+// Place all the styles related to the chat controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+margin:0;
+}
+#login,
+#login *{
+margin:0;
+padding:0;
+}
+#login{
+background: image-url("bg-login.jpg") no-repeat;
+background-size:cover;
+width:100%;
+overflow:hidden;
+}
+#login .login-in{
+    background:rgba(255,255,255,0.5);
+    border-radius:5px;
+    width:300px;
+    margin:calc((100vh - 300px) / 2) auto;
+    padding:1em;
+}
+#login .login-in h2{
+ text-align:center;
+}
+#login .login-in input[type="submit"]{
+    padding:0.5em 1em;
+}
